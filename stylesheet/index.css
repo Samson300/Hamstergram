@@ -10,6 +10,22 @@ html, body {
   width: 100%;
 }
 
+@keyframes roller-coaster {
+  0% {
+    /* opacity: 0; */
+    transform: rotate(0);
+  }
+
+  50% {
+    /* opacity: 1.0; */
+    transform: rotate(270deg);
+  }
+  100% {
+    /* opacity: 0; */
+    transform: rotate(-90deg);
+  }
+}
+
 .picture-frame {
   width: 50%;
   border: 2px solid cornflowerblue;
@@ -27,11 +43,14 @@ html, body {
   width: 100%;
   opacity: 0.9;
   /* display: block; */
-  transition: transform 500ms;
+  /* transition: transform 500ms; */
 }
 
 .picture-frame.big img {
-  transform: scale(2.5);
+  /* transform: scale(2.5); */
+  animation: roller-coaster 1s ease-in-out;
+  opacity: 1;
+  border-radius: 50%;
 }
 
 .picture-frame:hover {
