@@ -29,16 +29,20 @@ html, body {
   /* display: block; */
 }
 
+.picture-frame.big img {
+  transform: scale(2.5);
+}
+
 .picture-frame:hover {
   outline: 5px solid red;
 }
 /* scales image up if 
 picture-frame is hovered. */
-.picture-frame:hover img {
+/* .picture-frame:hover img {
   transform: scale(1.10);
   opacity: 1.0;
   
-}
+} */
 
 .hamster-playground {
   border: 5px solid gold;
