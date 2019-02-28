@@ -27,6 +27,7 @@ html, body {
   width: 100%;
   opacity: 0.9;
   /* display: block; */
+  transition: transform 500ms;
 }
 
 .picture-frame.big img {
