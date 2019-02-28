@@ -25,7 +25,18 @@ html, body {
 
 .picture-frame img {
   width: 100%;
+  opacity: 0.9;
   /* display: block; */
+}
+
+.picture-frame:hover {
+  outline: 5px solid red;
+}
+/* scales image up if 
+picture-frame is hovered. */
+.picture-frame:hover img {
+  transform: scale(1.10);
+  opacity: 1.0;
 }
 
 .hamster-playground {
