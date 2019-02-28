@@ -37,6 +37,7 @@ picture-frame is hovered. */
 .picture-frame:hover img {
   transform: scale(1.10);
   opacity: 1.0;
+  
 }
 
 .hamster-playground {
